@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.745); */
+}
+body{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.745); */
+    background-image: url("backgrount1.jpg");
+    background-size: cover;
+}
+.o{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.outer{
+    height: 500px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.email{
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.i-email{
+    height: 40px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+    border: 2px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.pass{
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.i-pass{
+    height: 40px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+    border: 2px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bolder;
+    
+}
+.b-sub{
+    height:40px ;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+.si{
+    margin-top: 60px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.b-sub:active{
+    animation: button 1s linear 0ms infinite alternate ;
+}
+@keyframes button {
+    0%{font-size: 15px;}
+    100%{font-size: 15.5px;}
+}

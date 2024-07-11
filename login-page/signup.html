@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="sty.css">
+   
+</head>
+
+<body>
+    
+    <section>
+        <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+
+        <!-- Background animation -->
+        
+        <div class="signin">
+            <!-- Signup form container -->
+            <div class="content">
+                <h2 style="margin-bottom: 15px;">Sign Up</h2>
+                <div class="form">
+                    <div class="main">
+                    <div class="inputBox">
+                        <input type="text" id="username" required placeholder="Username" class="i-email">
+                        <!-- <i>Username</i> -->
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="inputBox">
+                        <input type="email"  id="email" required placeholder="Email" class="i-email">
+                        <!-- <i>Email</i> -->
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="inputBox">
+                        <input type="password" id="password" required placeholder="Password" class="i-email">
+                        <!-- <i></i> -->
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="inputBox">
+                        <input type="password"  id="confirmPassword" required placeholder="Confirm Password" class="i-email">
+                        <!-- <i>Confirm Password</i> -->
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="inputBox">
+                        <input type="submit" value="Sign Up" onclick="submitForm()" class="b-sub">
+                    </div>
+                </div>
+                    <div class="links"> <a href="#">Already have an account?</a> <a href="login.html">Sign In</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    function submitForm() {
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+
+        // Password validation criteria
+        var passwordRegex = /^(?=.*[0-9].*[0-9].*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{4,}$/;
+
+        // Check if passwords match
+        if (password !== confirmPassword) {
+            alert("Passwords do not match");
+            return;
+        }
+
+        // Check if password meets criteria
+        if (!passwordRegex.test(password)) {
+            alert("Password must contain at least 4 characters, 1 symbol, and 3 numbers");
+            return;
+        }
+
+        // Create a new XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+
+        // Configure the request
+        xhr.open("POST", "signup.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        // Define what happens on successful data submission
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                // Redirect back to index.html
+                window.location.href = "index.html";
+            } else {
+                alert('Request failed. Status: ' + xhr.status);
+            }
+        };
+
+        // Handle errors
+        xhr.onerror = function () {
+            alert('Request failed');
+        };
+
+        // Send the request and form data
+        xhr.send("username=" + username + "&email=" + email + "&password=" + password);
+    }
+</script>
+
+    
+</body>
+
+</html>

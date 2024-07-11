@@ -1,0 +1,11 @@
+.hi{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url("backgrount1.jpg");
+}
